@@ -2,8 +2,11 @@
 class Fotos extends model {
     
     public function saveFotos(){
-        
-        print_r($_FILES);
+      //  print_r($_FILES);
+        if (isset($_FILES['arquivo']) && !empty($_FILES['arquivo']['tmp_name'])){
+            $permitidos = array('image/jpeg','image/jpg','image/png');
+            
+        }
         
     }
     
