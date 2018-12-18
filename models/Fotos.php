@@ -5,8 +5,9 @@ class Fotos extends model {
       //  print_r($_FILES);
         if (isset($_FILES['arquivo']) && !empty($_FILES['arquivo']['tmp_name'])){
             $permitidos = array('image/jpeg','image/jpg','image/png');
+            
             if(in_array($_FILES['arquivo']['type'], $permitidos)){
-                
+               $hash = time().rand(0,999); 
             }
         }
         
