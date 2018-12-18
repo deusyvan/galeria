@@ -1,6 +1,8 @@
 <fieldset>
 	<legend>Adicionar uma Foto</legend>
 	<form method="POST" enctype="multipart/form-data">
+		Título:<br/>
+		<input type="text" name="titulo"/><br/><br/>
 		Foto:<br/>
 		<input type="file" name="arquivo" /><br/><br/>
 		<input type="submit" value="Enviar Arquivo">
