@@ -3,7 +3,7 @@ class Fotos extends model {
     public function getFotos(){
         $array = array();
         
-        $sql = "SELECT * FROM fotos";
+        $sql = "SELECT * FROM fotos ORDER BY id DESC";
         
         $sql = $this->db->query($sql);
         
