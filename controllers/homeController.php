@@ -8,6 +8,9 @@ class homeController extends controller{
         $dados = array();
         
         $fotos = new Fotos();
+        
+        $fotos->saveFotos();
+        
         $dados['fotos'] = $fotos->getFotos();
       
         $this->loadTemplate('home', $dados);

@@ -1,5 +1,12 @@
 <?php 
 class Fotos extends model {
+    
+    public function saveFotos(){
+        
+        print_r($_FILES);
+        
+    }
+    
     public function getFotos(){
         $array = array();
         
