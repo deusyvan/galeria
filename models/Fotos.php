@@ -7,7 +7,8 @@ class Fotos extends model {
             $permitidos = array('image/jpeg','image/jpg','image/png');
             
             if(in_array($_FILES['arquivo']['type'], $permitidos)){
-               $hash = time().rand(0,999); 
+               $nome = md5(time().rand(0,999).'.jpg'); 
+               
             }
         }
         
