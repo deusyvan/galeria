@@ -15,7 +15,8 @@ class Fotos extends model {
                    $titulo = addslashes($_POST['titulo']);
                }
                
-               
+               $sql = "INSERT INTO fotos SET titulo = '$titulo', url='$nome'";
+               $this->db->query($sql);
             }
         }
         
